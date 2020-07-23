@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="Patient Information:"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="Patient Name"
         android:inputType="textPersonName" />
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/patientNameField"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Address"
         android:inputType="textPersonName" />
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/addressField"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Phone Number"
         android:inputType="textPersonName" />
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/phoneNumField"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Health Card Number"
         android:inputType="number" />
@@ -65,25 +65,49 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/locationLab"
-        android:layout_alignEnd="@+id/locationLab"
-        android:layout_alignRight="@+id/locationLab"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
         android:text="Clear" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/locationLab"
-        android:layout_alignStart="@+id/locationLab"
-        android:layout_alignLeft="@+id/locationLab"
+        android:layout_below="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactName"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_alignLeft="@+id/contactName"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="5dp"
-        android:text="Submit" />
+        android:layout_marginTop="2dp"
+        android:text="Add Symptom" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactDate"
+        android:layout_alignEnd="@+id/contactDate"
+        android:layout_alignRight="@+id/contactDate"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="Add Contact" />
 
     <EditText
         android:id="@+id/typeTest"
@@ -91,7 +115,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/testInfoText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Test Type"
         android:inputType="textPersonName" />
@@ -106,7 +130,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="153dp"
         android:layout_marginLeft="153dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2dp"
         android:text="Test Information:" />
 
     <EditText
@@ -115,20 +139,94 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/typeTest"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Test Location"
         android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/locationLab"
+    <TextView
+        android:id="@+id/symptomLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/locationTest"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2dp"
+        android:text="Symptoms:" />
+
+    <EditText
+        android:id="@+id/symptomType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptomLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
         android:ems="10"
-        android:hint="Lab Location"
+        android:hint="Symptom"
         android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/startSymptom"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptomType"
+        android:layout_alignStart="@+id/symptomType"
+        android:layout_alignLeft="@+id/symptomType"
+        android:layout_marginStart="-45dp"
+        android:layout_marginLeft="-45dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Start Date"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/contactName"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contacts"
+        android:layout_alignStart="@+id/startSymptom"
+        android:layout_alignLeft="@+id/startSymptom"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/endSymptom"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptomType"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/startSymptom"
+        android:layout_toRightOf="@+id/startSymptom"
+        android:ems="10"
+        android:hint="End Date"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/contactDate"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contacts"
+        android:layout_alignEnd="@+id/endSymptom"
+        android:layout_alignRight="@+id/endSymptom"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endSymptom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Contacts:" />
 
 </RelativeLayout>

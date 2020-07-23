@@ -7,15 +7,101 @@
     tools:context=".MainLab">
 
     <TextView
-        android:id="@+id/patientSize"
+        android:id="@+id/testLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/healthCardNum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:text="Test Location"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/testType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Test Type"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/healthCardNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="192dp"
-        android:layout_marginLeft="192dp"
-        android:layout_marginTop="202dp"
-        android:text="test" />
+        android:layout_marginTop="125dp"
+        android:textSize="20dp"
+        android:text="Health Card #" />
+
+    <TextView
+        android:id="@+id/adminDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Date test was given"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/adminTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Time test was given"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/labLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Lab Location"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/testOutcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Test Outcome"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/clearLabInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testOutcome"
+        android:layout_alignEnd="@+id/testOutcome"
+        android:layout_alignRight="@+id/testOutcome"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/sendToDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testOutcome"
+        android:layout_alignStart="@+id/testOutcome"
+        android:layout_alignLeft="@+id/testOutcome"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:text="Send" />
+
 </RelativeLayout>
