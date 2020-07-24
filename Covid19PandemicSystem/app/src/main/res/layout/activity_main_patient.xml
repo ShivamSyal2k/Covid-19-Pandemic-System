@@ -8,14 +8,14 @@
 
     <TextView
         android:id="@+id/patientName"
-        android:layout_width="76dp"
-        android:layout_height="33dp"
+        android:layout_width="311dp"
+        android:layout_height="627dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="159dp"
-        android:layout_marginLeft="159dp"
-        android:layout_marginTop="165dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="37dp"
         android:text="Name" />
 </RelativeLayout>

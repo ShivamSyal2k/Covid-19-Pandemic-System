@@ -1,3 +1,7 @@
+/**
+ * Author: Shivam Syal
+ * Copyright 2020, all rights reserved
+ */
 package com.example.covid_19pandemicsystem;/*PLEASE DO NOT EDIT THIS CODE*/
 /*This code was generated using the UMPLE 1.29.1.4994.706e115af modeling language!*/
 
