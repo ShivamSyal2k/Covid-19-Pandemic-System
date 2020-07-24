@@ -32,4 +32,13 @@ How to run app:
 2. Install Final.apk.
 3. Run app by clicking on it.
 
+To see source code follow these steps:
+1. Open Covid19PandemicSystem in the top-level directory.
+2. Open app.
+3. Open src.
+4. Open main.
+5. Open java/com/example/covid_19pandemicsystem.
+
+Here are all the source code Java files.
+
 Contact Info: ssyal030@uottawa.ca
