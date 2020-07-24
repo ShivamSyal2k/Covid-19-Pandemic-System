@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -23,6 +26,8 @@ public class MainLab extends AppCompatActivity {
     public Test test;
     public SharedPreferences sp2;
     public String labLocation, testOutcome;
+    private SimpleDateFormat dateTime;
+    private String dateString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,16 +75,22 @@ public class MainLab extends AppCompatActivity {
                 labLocation = labLocationField.getText().toString();
                 testOutcome = testOutcomeField.getText().toString();
 
+                dateTime = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                Date currentDate = new Date();
+                String dateAndTime = dateTime.format(currentDate);
+                dateString = dateAndTime.substring(0, 10);
+
                 SharedPreferences.Editor editor = sp2.edit();
                 editor.putString("labLocation",labLocation);
                 editor.putString("testOutcome",testOutcome);
+                editor.putString("labDate",dateString);
                 editor.commit();
 
-                healthCard.setText("#: ");
-                testLocation.setText("Location: ");
-                testType.setText("Type: ");
-                adminDate.setText("Date: ");
-                adminTime.setText("Time: ");
+                healthCard.setText("Currently we have no patient.");
+                testLocation.setText("Wait till next test arrives.");
+                testType.setText("*");
+                adminDate.setText("*");
+                adminTime.setText("*");
                 labLocationField.setText("");
                 testOutcomeField.setText("");
             }

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainDoctor">
+
+    <TextView
+        android:id="@+id/labDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testLocDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Lab Location" />
+
+    <TextView
+        android:id="@+id/testLocDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testTimeDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Test Location" />
+
+    <TextView
+        android:id="@+id/dateTestDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typeTestDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Date Test Given" />
+
+    <TextView
+        android:id="@+id/symptomDisplay"
+        android:layout_width="368dp"
+        android:layout_height="111dp"
+        android:layout_below="@+id/outcomeDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Symptoms:"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <TextView
+        android:id="@+id/contactDisplay"
+        android:layout_width="368dp"
+        android:layout_height="111dp"
+        android:layout_below="@+id/symptomDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Contacts:"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <TextView
+        android:id="@+id/nameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/phoneDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Phone Number" />
+
+    <TextView
+        android:id="@+id/healthNumDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Health Card Number" />
+
+    <TextView
+        android:id="@+id/typeTestDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/healthNumDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Test Type" />
+
+    <TextView
+        android:id="@+id/testTimeDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTestDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Time Test Given" />
+
+    <Button
+        android:id="@+id/checkOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactDisplay"
+        android:layout_alignStart="@+id/outcomeDisplay"
+        android:layout_alignLeft="@+id/outcomeDisplay"
+        android:layout_marginStart="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="5dp"
+        android:text="Check Out" />
+
+    <TextView
+        android:id="@+id/outcomeDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labDateDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Test Outcome" />
+
+    <TextView
+        android:id="@+id/labDateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Date Test Processed" />
+
+    <TextView
+        android:id="@+id/addressDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Address" />
+
+</RelativeLayout>

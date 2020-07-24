@@ -110,7 +110,7 @@ public class MainNursing extends AppCompatActivity {
                 symptomField.setText("");
                 startField.setText("");
                 endField.setText("");
-                Toast.makeText(MainNursing.this,"Symptom Saved.",Toast.LENGTH_LONG).show();
+
             }
         });
         addContact.setOnClickListener(new View.OnClickListener() {
@@ -129,6 +129,9 @@ public class MainNursing extends AppCompatActivity {
         address.setText("");
         phone.setText("");
         healthCardNumber.setText("");
+        typeTest.setText("");
+        locationTest.setText("");
+
     }
     public void createPatient() {
         person = new Patient(patientNameString,addressString,phoneString,healthNum);
@@ -165,19 +168,28 @@ public class MainNursing extends AppCompatActivity {
     }
     public void createSymptoms(){
         String symp = symptomField.getText().toString();
-        symptoms.add(symp);
-
         String startSymp = startField.getText().toString();
-        startDate.add(startSymp);
-
         String endSymp = endField.getText().toString();
-        endDate.add(endSymp);
+        if(symp.length()>=1 && startSymp.length()>=1 && endSymp.length()>=1) {
+            symptoms.add(symp);
+            startDate.add(startSymp);
+            endDate.add(endSymp);
+            //SymptomDetails sympFull = new SymptomDetails(symp,startSymp,endSymp,person);
+            //symptomDetails.add(sympFull);
+            //person.addSymptomDetail(sympFull);
+            Toast.makeText(MainNursing.this,"Symptom Saved.",Toast.LENGTH_LONG).show();
+        }else {
+            if (symp.length() < 1) {
+                Toast.makeText(MainNursing.this, "Error: symptom detail field is empty.", Toast.LENGTH_LONG).show();
+            }
+            if (startSymp.length() < 1) {
+                Toast.makeText(MainNursing.this, "Error: symptom start field is empty.", Toast.LENGTH_LONG).show();
+            }
+            if (endSymp.length() < 1) {
+                Toast.makeText(MainNursing.this, "Error: symptom end field is empty.", Toast.LENGTH_LONG).show();
+            }
 
-        //SymptomDetails sympFull = new SymptomDetails(symp,startSymp,endSymp,person);
-        //symptomDetails.add(sympFull);
-
-        //person.addSymptomDetail(sympFull);
-
+        }
     }
     public void sendSymptoms(){
         SharedPreferences.Editor editor = sp.edit();
@@ -191,16 +203,21 @@ public class MainNursing extends AppCompatActivity {
     }
     public void createContacts(){
         String contactNameString = contactNameField.getText().toString();
-        contactName.add(contactNameString);
-
         String contactDateString = contactDateField.getText().toString();
-        contactDate.add(contactDateString);
-
-       //ContactDetails contactFull = new ContactDetails(contactNameString,contactDateString);
-        //contactDetails.add(contactFull);
-
-       // person.addContactDetail(contactFull);
-
+        if(contactDateString.length()>=1 && contactNameString.length()>=1) {
+            contactName.add(contactNameString);
+            contactDate.add(contactDateString);
+            //ContactDetails contactFull = new ContactDetails(contactNameString,contactDateString);
+            //contactDetails.add(contactFull);
+            // person.addContactDetail(contactFull);
+        }else{
+            if(contactDateString.length()<1){
+                Toast.makeText(MainNursing.this, "Error: contact date field empty.", Toast.LENGTH_LONG).show();
+            }
+            if(contactNameString.length()<1) {
+                Toast.makeText(MainNursing.this, "Error: contact name field empty.", Toast.LENGTH_LONG).show();
+            }
+        }
     }
     public  void sendContacts(){
         SharedPreferences.Editor editor = sp.edit();

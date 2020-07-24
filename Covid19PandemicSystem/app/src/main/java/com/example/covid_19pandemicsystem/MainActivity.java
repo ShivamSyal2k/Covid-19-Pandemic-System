@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 else if(userType.equals("lab") && password.equals("lab321")) {
                     openLab();
                 }
+                else if (userType.equals("doctor") && password.equals("doc")){
+                    openDoctor();
+                }
             }
         });
     }
@@ -57,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openLab(){
         Intent intent = new Intent(this, MainLab.class);
+        startActivity(intent);
+    }
+    public void openDoctor(){
+        Intent intent = new Intent(this, MainDoctor.class);
         startActivity(intent);
     }
 }
