@@ -2,7 +2,7 @@
 This repository contains the files to an app which allows nurses to create covid-19 tests for patients, lets guests view the latest updates on the virus and many more features.
 
 Author: Shivam Syal
-Copyright 2020, all rights reserved.
+\n Copyright 2020, all rights reserved.
 
 - User stories exist in the User Stories.pdf in the top-level directory.
 - Class diagram exist in the classDiagram.pdf in the top-level directory.
@@ -11,10 +11,10 @@ Copyright 2020, all rights reserved.
 
 
 Architecture:
-The app is made using android studio.
-The code is split into 2 main sections, the java files and th xml files.
-The xml files are the layouts of activities while the java files host the code that the app is made of.
-The UI is app-based and inputs are done by entering text in the app.
+- The app is made using android studio.
+- The code is split into 2 main sections, the java files and th xml files.
+- The xml files are the layouts of activities while the java files host the code that the app is made of.
+- The UI is app-based and inputs are done by entering text in the app.
 
 Future Work For Devs:
 
