@@ -2,7 +2,8 @@
 This repository contains the files to an app which allows nurses to create covid-19 tests for patients, lets guests view the latest updates on the virus and many more features.
 
 Author: Shivam Syal
-\n Copyright 2020, all rights reserved.
+
+Copyright 2020, all rights reserved.
 
 - User stories exist in the User Stories.pdf in the top-level directory.
 - Class diagram exist in the classDiagram.pdf in the top-level directory.
