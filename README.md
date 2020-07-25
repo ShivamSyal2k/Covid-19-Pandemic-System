@@ -9,6 +9,7 @@ Copyright 2020, all rights reserved.
 - Class diagram exist in the classDiagram.pdf in the top-level directory.
 - Tests exist in the Tests.pdf in the top-level directory.
 - app exists in the top-level directory as Final.apk.
+- Video is also in the top-level directory.
 
 
 Architecture:
